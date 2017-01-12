@@ -1,0 +1,13 @@
+<h2>Welcome to Bookworm</h2>
+
+<p>Let's read</p>
+
+<h3>Posts</h3>
+
+<ul>
+  {{#each model as |book|}}
+    {{book-tile book=book update="update" destroyBook="destroyBook"}}
+    {{/each}}
+</ul>
+
+{{new-book saveBook2="saveBook3"}}

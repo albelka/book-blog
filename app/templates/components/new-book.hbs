@@ -1,0 +1,35 @@
+{{#if addNewBook}}
+  <h1>New Post</h1>
+  <div>
+    <form>
+      <div class="form-group">
+        <label for="author">Author</label>
+        {{input value=author id="author"}}
+      </div>
+
+      <div class="form-group">
+        <label for="title">Title</label>
+        {{input value=title id="title"}}
+      </div>
+
+      <div class="form-group">
+        <label for="postedBy">Posted by</label>
+        {{input value=postedBy id="postedBy"}}
+      </div>
+
+      <div class="form-group">
+        <label for="review">Write your review here</label>
+        {{input value=review id="review"}}
+      </div>
+
+      <div class="form-group">
+        <label for="image">Image URL</label>
+        {{input value=image id="image"}}
+      </div>
+
+      <button {{action 'saveBook1'}}>Post </button>
+    </form>
+  </div>
+{{else}}
+  <button class="btn btn-warning" {{action 'bookFormShow'}}>New Post</button>
+{{/if}}

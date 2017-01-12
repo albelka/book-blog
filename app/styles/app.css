@@ -1,0 +1,18 @@
+header  {
+  background-image: url('/img/book-banner.jpg');
+  text-align: center;
+
+}
+
+body {
+  background: radial-gradient(#5DD026, #26D044);
+
+}
+
+body p {
+
+}
+
+.navbar {
+  background-color: #FFBD33;
+}

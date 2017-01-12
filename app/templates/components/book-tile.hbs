@@ -1,0 +1,5 @@
+<li>
+  {{book.title}} by {{book.author}} reviewed by {{book.postedBy}}
+  {{update-book book=book update="update"}}
+  <button class="btn btn-warning" {{action 'delete' book}}>delete</button>
+</li>
