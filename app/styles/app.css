@@ -20,8 +20,10 @@ body p {
 
 img {
   width: 40%;
+  max-height: 200px;
   float: left;
   margin-right: 30px;
+
 }
 
 button {

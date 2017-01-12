@@ -1,8 +1,6 @@
 <li>
   <div class="panel panel-default">
 
-  <img src="{{book.image}}"> <h3>{{book.title}}</h3><br> by<h4> {{book.author}}</h4><br> reviewed by {{book.postedBy}} <br><br> {{book.review}}
-  {{update-book book=book update="update"}}
-  <button class="btn btn-warning" {{action 'delete' book}}>delete</button>
+<img src="{{book.image}}"> <h3>{{#link-to 'book' book.id}}{{book.title}}{{/link-to}}</h3><br> by<h4> {{book.author}}</h4><br> reviewed by {{book.postedBy}} <br><br>
 </div>
 </li>
